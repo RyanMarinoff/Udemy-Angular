@@ -1,9 +1,0 @@
-button {
-    background-color: skyblue;
-    color: gray;
-}
-button:disabled,
-button[disabled] {
-    background-color: gray;
-    color: pink;
-}
