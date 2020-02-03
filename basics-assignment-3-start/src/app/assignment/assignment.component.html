@@ -1,5 +1,0 @@
-<button type="button" class="btn btn-info" (click)="btnClick()">Display Details</button>
-<div  [ngClass]="{'white-color': clicked > 4}" [ngStyle]="{'background-color' : clicked > 4 ? '#92a8d1' : 'white'}">
-    <p [hidden]="!displayIt">You have clicked this button {{ clicked }} times, something will now happen.</p>
-    <p [hidden]="clicked < 4">You have noticed, you only see the odd clicks above. I'll be nice. You clicked the button {{ clicked }} times. Enjoy!</p>
-</div>
