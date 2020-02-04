@@ -14,6 +14,6 @@ export class Recipe {
     }
 
     public AddIngredient(theIngredient: Ingredient) {
-        this.name = theIngredient.Name;
+        this.name = theIngredient.name;
     }
 }

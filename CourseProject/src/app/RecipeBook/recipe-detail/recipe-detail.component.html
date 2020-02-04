@@ -1,9 +1,33 @@
-<h3>Recipe Name</h3>
-
-<ul>
-    <li><app-recipe-ingredient></app-recipe-ingredient></li>
-    <li><app-recipe-ingredient></app-recipe-ingredient></li>
-</ul>
-<p>
-    Recipe instructions
-</p>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="pull-left">
+            <h3 class="list-group-item-heading"> theRecipe.name </h3>
+            <ul>
+                ngFor theIngredient of theRecipe.ingredients<br>
+                theIngredient.Quantity theIngredient.Measure theIngredient.Name
+            </ul>
+        </div>
+        <div class="pull-right">
+            <img [src]="" alt="image" class="image-responsive" style="max-height: 150px">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <p>theRecipe.description</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle">
+                Manage Recipe <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">To Shopping List</a></li>
+                <li><a href="#">Edit Recipe</a></li>
+                <li><a href="#">Delete Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

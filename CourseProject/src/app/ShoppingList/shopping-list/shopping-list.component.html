@@ -2,25 +2,10 @@
     <div class="col-sm-12">
         <h3>Shopping List</h3>
         <h4>Recipe Name</h4>
-        <ul>
-            <li>
-                <app-recipe-ingredient></app-recipe-ingredient>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <app-recipe-ingredient></app-recipe-ingredient>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <app-recipe-ingredient></app-recipe-ingredient>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <app-recipe-ingredient></app-recipe-ingredient>
-            </li>
+        <ul class="list-group">
+            <a class="list-group-item" style="cursor: pointer" *ngFor="let ingredient of ingredients">
+                {{ ingredient.name }} ({{ ingredient.quantity }} {{ ingredient.measure }})
+            </a>
         </ul>
     </div>
 </div>
