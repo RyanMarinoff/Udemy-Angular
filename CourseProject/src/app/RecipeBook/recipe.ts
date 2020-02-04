@@ -14,6 +14,6 @@ export class Recipe {
     }
 
     public AddIngredient(theIngredient: Ingredient) {
-        const length = this.ingredients.push(theIngredient);
+        this.name = theIngredient.Name;
     }
 }
