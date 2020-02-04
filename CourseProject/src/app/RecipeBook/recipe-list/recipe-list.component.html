@@ -6,6 +6,8 @@
         <button class="btn btn-success">New Recipe</button>
     </div>
     <div class="col-xs-12">
-        <app-recipe *ngFor="let theRecipe of recipes" [theRecipe]="theRecipe"></app-recipe>
+        <a href="#" class="list-group-item clearfix" *ngFor="let theRecipe of recipes">
+            <app-recipe [theRecipe]="theRecipe"></app-recipe>
+        </a>
     </div>
 </div>

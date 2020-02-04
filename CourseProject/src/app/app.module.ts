@@ -5,11 +5,11 @@ import { AppComponent } from './app.component';
 import { ShoppingListComponent } from './ShoppingList/shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './ShoppingList/shopping-list-edit/shopping-list-edit.component';
 import { RecipeListComponent } from './RecipeBook/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './RecipeBook/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './RecipeBook/recipe-detail/recipe-detail.component';
 import { HeaderComponent } from './Shared/header/header.component';
 import { RecipeBookComponent } from './RecipeBook/recipe-book/recipe-book.component';
 import { RecipeComponent } from './RecipeBook/recipe/recipe.component';
+import { RecipeIngredientComponent } from './RecipeBook/recipe-ingredient/recipe-ingredient.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,11 @@ import { RecipeComponent } from './RecipeBook/recipe/recipe.component';
     ShoppingListComponent,
     ShoppingListEditComponent,
     RecipeListComponent,
-    RecipeItemComponent,
     RecipeDetailComponent,
     HeaderComponent,
     RecipeBookComponent,
-    RecipeComponent
+    RecipeComponent,
+    RecipeIngredientComponent
   ],
   imports: [
     BrowserModule
