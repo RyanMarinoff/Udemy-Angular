@@ -3,7 +3,7 @@ import { Ingredient } from '../ingredient';
 
 @Component({
   selector: 'app-recipe-ingredient',
-  template: '<p>{{ theIngredient.Quantity }} {{ theIngredient.Measure }} - {{ theIngredient.Name }}</p>',
+  template: '<p>{{ theIngredient.quantity }} {{ theIngredient.measure }} - {{ theIngredient.name }}</p>',
   styleUrls: ['./recipe-ingredient.component.css']
 })
 export class RecipeIngredientComponent implements OnInit {
