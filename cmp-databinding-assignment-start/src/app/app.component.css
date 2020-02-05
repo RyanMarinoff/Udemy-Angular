@@ -1,0 +1,8 @@
+app-even {
+    color: black;
+    background-color: gray;
+}
+app-odd {
+    color: gray;
+    background-color: black;
+}

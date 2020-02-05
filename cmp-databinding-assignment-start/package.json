@@ -48,5 +48,11 @@
     "protractor": "~5.4.0",
     "ts-node": "^8.6.2",
     "tslint": "^5.0.0"
+  },
+  "compilerOptions":
+  {
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   }
 }
