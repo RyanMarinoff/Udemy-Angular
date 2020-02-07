@@ -1,6 +1,5 @@
-<app-header></app-header>
+<app-header (navigate)="onNavigate($event)"></app-header>
 <main role="main" class="container">
-  <app-recipe-book></app-recipe-book>
-  <app-shopping-list></app-shopping-list>
-  <app-shopping-list-edit></app-shopping-list-edit>
+  <app-recipe-book *ngIf="selected === 'recipe-book'"></app-recipe-book>
+  <app-shopping-list *ngIf="selected === 'shopping-list'"></app-shopping-list>
 </main>

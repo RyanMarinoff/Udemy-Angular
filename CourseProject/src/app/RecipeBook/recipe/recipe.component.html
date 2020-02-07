@@ -1,8 +1,8 @@
-<div class="pull-left">
-    <h4 class="list-group-item-heading"> {{ theRecipe.name }}</h4>
-    <p class="list-group-item-text"> {{ theRecipe.description }}</p>
-</div>
-<div class="pull-right">
+<div class="list-group-item d-flex justify-content-between lh-condensed">
+    <div>
+        <h5 class="my-0"> {{ theRecipe.name }}</h5>
+        <small class="text-muted"> {{ theRecipe.description }}</small>
+    </div>
     <img [src]="theRecipe.imagePath" alt="{{ theRecipe.name }} image" class="image-responsive"
         style="max-height: 50px;">
 </div>

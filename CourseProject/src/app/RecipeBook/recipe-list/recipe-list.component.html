@@ -2,13 +2,17 @@
     <div class="col-xs-12">
         <h3>Recipe List</h3>
     </div>
+</div>
+<div class="row">
     <div class="col-xs-12">
         <button class="btn btn-success">New Recipe</button>
     </div>
+</div>
+<div class="row">
     <div class="col-xs-12">
-        <a href="#" class="list-group-item clearfix" *ngFor="let theRecipe of recipes">
+        <a href="#" class="list-group-item clearfix" *ngFor="let theRecipe of recipes"
+            (click)="SelectRecipe(theRecipe)">
             <app-recipe [theRecipe]="theRecipe"></app-recipe>
         </a>
     </div>
 </div>
-

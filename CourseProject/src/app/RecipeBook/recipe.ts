@@ -6,14 +6,10 @@ export class Recipe {
     public imagePath: string;
     public ingredients: Array<Ingredient>;
 
-    constructor(name: string, description: string, imagePath: string) {
+    constructor(name: string, description: string, imagePath: string, ingredients: Array<Ingredient>) {
         this.name = name;
         this.description = description;
         this.imagePath = imagePath;
-        this.ingredients = new Array<Ingredient>();
-    }
-
-    public AddIngredient(theIngredient: Ingredient) {
-        this.name = theIngredient.name;
+        this.ingredients = ingredients;
     }
 }

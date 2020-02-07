@@ -7,11 +7,15 @@ import { Recipe } from '../recipe';
   styleUrls: ['./recipe-book.component.css']
 })
 export class RecipeBookComponent implements OnInit {
-  @Input() theRecipe: Recipe;
+  selectedRecipe: Recipe;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
+  selectRecipe(recipe: Recipe) {
+    this.selectedRecipe = recipe;
+  }
 }
