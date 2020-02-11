@@ -11,6 +11,7 @@ export class RecipeIngredientComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.theIngredient = new Ingredient('', 0, '');
   }
 
 }

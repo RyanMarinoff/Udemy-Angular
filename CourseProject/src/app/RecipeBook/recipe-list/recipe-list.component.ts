@@ -7,9 +7,10 @@ import { Ingredient } from '../ingredient';
   templateUrl: './recipe-list.component.html',
   styleUrls: ['./recipe-list.component.css']
 })
+
 export class RecipeListComponent implements OnInit {
   @Output() currentRecipe: EventEmitter<Recipe>;
-  
+
   recipes: Array<Recipe>;
   ingredients: Array<Ingredient>;
 
@@ -37,7 +38,10 @@ export class RecipeListComponent implements OnInit {
       'https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434_960_720.png',
       this.ingredients
     ));
+
+    this.SelectRecipe(this.recipes[0]);
   }
+
   SelectRecipe(theRecipe: Recipe) {
     this.currentRecipe.emit(theRecipe);
   }
